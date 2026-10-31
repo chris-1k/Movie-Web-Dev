@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieVerse | Discover Your Next Favorite Film</title>
+    <meta
+      name="description"
+      content="MovieVerse is a modern movie discovery website featuring trending films, genres, and cinematic highlights."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">MV</div>
+          <div class="brand-text">
+            <span class="brand-title">MovieVerse</span>
+            <span class="brand-subtitle">Cinematic picks</span>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#discover">Discover</a>
+          <a href="#trending">Trending</a>
+          <a href="#collections">Collections</a>
+        </nav>
+
+        <button class="nav-cta">Sign In</button>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p class="eyebrow">Now streaming</p>
+            <h1>Find your next obsession.</h1>
+            <p class="hero-copy">
+              Explore blockbuster hits, hidden gems, and award-winning stories across every genre.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary-btn">Watch Trailer</button>
+              <button class="secondary-btn">Browse Library</button>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">Featured</span>
+                <strong>Dark Horizon</strong>
+              </div>
+              <div>
+                <span class="meta-label">Rating</span>
+                <strong>8.9/10</strong>
+              </div>
+              <div>
+                <span class="meta-label">Runtime</span>
+                <strong>2h 14m</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="discover" id="discover">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow small">Discover</p>
+              <h2>Movies for every mood</h2>
+            </div>
+            <a href="#" class="text-link">View all</a>
+          </div>
+
+          <div class="toolbar">
+            <label class="search-box" aria-label="Search movies">
+              <span>🔎</span>
+              <input id="searchInput" type="text" placeholder="Search movies, genres or titles" />
+            </label>
+
+            <div class="filter-group" id="filterGroup" aria-label="Movie filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="Action">Action</button>
+              <button class="filter-btn" data-filter="Sci-Fi">Sci-Fi</button>
+              <button class="filter-btn" data-filter="Drama">Drama</button>
+              <button class="filter-btn" data-filter="Comedy">Comedy</button>
+              <button class="filter-btn" data-filter="Thriller">Thriller</button>
+            </div>
+          </div>
+
+          <div class="movies-grid" id="movieGrid" aria-live="polite"></div>
+        </section>
+
+        <section class="trending" id="trending">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow small">Trending</p>
+              <h2>What people are watching</h2>
+            </div>
+            <a href="#" class="text-link">More picks</a>
+          </div>
+
+          <div class="featured-row">
+            <article class="feature-card tall">
+              <div class="feature-content">
+                <p class="feature-tag">Top 10 this week</p>
+                <h3>Neon Skyline</h3>
+                <p>
+                  A cyber detective follows a trail of disappearances across the luminous edge of the future.
+                </p>
+                <button class="primary-btn small-btn">Play now</button>
+              </div>
+            </article>
+
+            <article class="feature-card wide">
+              <div class="feature-content">
+                <p class="feature-tag">Award-winning</p>
+                <h3>Silent Echo</h3>
+                <p>
+                  A grieving composer uncovers a forgotten melody that changes the course of her life.
+                </p>
+                <button class="secondary-btn small-btn">Read review</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="collections" id="collections">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow small">Collections</p>
+              <h2>Curated by vibe</h2>
+            </div>
+          </div>
+
+          <div class="collection-grid">
+            <article class="collection-card"> 
+              <span class="collection-icon">🎬</span>
+              <h3>Weekend Blockbusters</h3>
+              <p>Big action, massive energy, and unforgettable scale.</p>
+            </article>
+            <article class="collection-card accent-two">
+              <span class="collection-icon">🌌</span>
+              <h3>Mind-Bending Sci-Fi</h3>
+              <p>Futuristic worlds and stories that stretch reality.</p>
+            </article>
+            <article class="collection-card accent-three">
+              <span class="collection-icon">💫</span>
+              <h3>Feel-Good Favorites</h3>
+              <p>Warm-hearted stories with humor, heart, and charm.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 MovieVerse</p>
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Help</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
